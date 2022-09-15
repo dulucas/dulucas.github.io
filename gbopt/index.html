@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Learning to Better Segment Objects from Unseen Classes with Unlabeled Videos">
+    <meta name="author" content="Yuming Du,
+                                 Yang Xiao,
+				 Vincent Lepetit">
+
+    <title>Learning to Better Segment Objects from Unseen Classes with Unlabeled Videos</title>
+    <!-- Bootstrap core CSS -->
+    <!--link href="bootstrap.min.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+    <!--    <link rel="icon" href="img/favicon.gif" type="image/gif">-->
+</head>
+
+<body>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container"></div>
+    <h2>Learning to Better Segment Objects from Unseen Classes with Unlabeled Videos</h2>
+    <!-- <h3>NeurIPS 2020 (Oral)</h3> -->
+<!--            <p class="abstract">An interpretable, data-efficient, and scalable neural scene representation.</p>-->
+    <hr>
+    <p class="authors">
+        <a href="https://dulucas.github.io/Homepage/"> Yuming Du</a>,
+        <a href="https://youngxiao13.github.io/"> Yang Xiao</a>,
+        <a href="https://imagine.enpc.fr/~lepetitv/"> Vincent Lepetit</a>
+    </p>
+    <div class="btn-group" role="group" aria-label="Top menu">
+        <a class="btn btn-primary" href="https://arxiv.org/abs/2104.12276">Paper</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="section">
+        <div class="vcontainer">
+            <iframe class='video' src="https://www.youtube.com/embed/7q3jRZ_2PE4" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+        <hr>
+        <p>
+	    In this paper, we explore the use of unlabeled videos to improve the performance of instance segmentation model on unseen classes. 
+            The ability to localize and segment objects from unseen classes would open the door to new applications, such as autonomous object learning in active vision.  
+	    Given some unlabeled videos containing unseen classes, our baseline instance segmentation model pretrained on seen classes is able to generate masks for objects in the videos, 
+	    then we use our proposed Bayesian method to remove the false positives by exploring the consistency among consecutive frames. 
+	    The generated masks can be then used to help the model to better localize and recognize the objects from unseen classes.
+            Our method starts from a set of object proposals and relies on (non-realistic) analysis-by-synthesis to select the correct ones by 
+            performing an efficient optimization over all the frames simultaneously. Through extensive experiments, 
+            we show that our method can generate a high-quality training set which significantly boosts the performance 
+            of segmenting objects of unseen classes. We thus believe that our method could open the door for 
+            open-world instance segmentation using abundant Internet videos.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Bibtex</h2>
+        <hr>
+        <div class="bibtexsection">
+	    @InProceedings{Du_2021_ICCV,
+    		author    = {Du, Yuming and Xiao, Yang and Lepetit, Vincent},
+    		title     = {Learning To Better Segment Objects From Unseen Classes With Unlabeled Videos},
+    		booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    		month     = {October},
+    		year      = {2021},
+    		pages     = {3375-3384}
+		}
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>Send feedback and questions to <a href="https://dulucas.github.io/Homepage/">Yuming Du</a></p>
+        <p>Website template from <a href="https://vsitzmann.github.io/siren/">SIREN</a></p>
+    </footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
