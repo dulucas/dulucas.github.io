@@ -190,36 +190,6 @@
             </div>
           </div>
           <div id="tabs-content">
-            <div data-content="trajectory" class="tab-content is-active content has-text-left">
-              <div class="columns is-centered has-text-left">
-                <div class="column is-two-thirds content">
-                  By visualizing the trajectories of the motion, the jittering issues and foot sliding issues can be better 
-                  viewed from the figures. Smooth motion tends to have regular pose trajectories with the velocity vector of 
-                  each joint changing steadily. The density of the pose trajectories will change along with the walking speed, 
-                  the trajectories will become denser when the person slows down. Thus, if there is no foot sliding, we should 
-                  occasionally see the change of density in pose trajectories.
-                </div>
-              </div>
-              <table width="100%">
-                <tr>
-                  <th width="33%" align="center">GT</th>
-                  <th width="33%" align="center">AvatarPoser</th>
-                  <th width="33%" align="center">AGRoL</th>
-                </tr>
-                <tr>
-                  <td align="center"><img src="static/resources/trajectory/gt01.jpg"></td>
-                  <td align="center"><img src="static/resources/trajectory/ava01.jpg"></td>
-                  <td align="center"><img src="static/resources/trajectory/agrol01.jpg"></td>
-                </tr>
-
-                <tr>
-                  <td align="center"><img src="static/resources/trajectory/gt02.jpg"></td>
-                  <td align="center"><img src="static/resources/trajectory/ava02.jpg"></td>
-                  <td align="center"><img src="static/resources/trajectory/agrol02.jpg"></td>
-                </tr>
-
-              </table>
-            </div>
 
             <div data-content="videos" class="tab-content content">
               <div class="columns is-centered has-text-left">
@@ -273,9 +243,40 @@
                     </video>
                   </td>
                 </tr>
+              </table>
+            </div>
+
+            <div data-content="trajectory" class="tab-content is-active content has-text-left">
+              <div class="columns is-centered has-text-left">
+                <div class="column is-two-thirds content">
+                  By visualizing the trajectories of the motion, the jittering issues and foot sliding issues can be better 
+                  viewed from the figures. Smooth motion tends to have regular pose trajectories with the velocity vector of 
+                  each joint changing steadily. The density of the pose trajectories will change along with the walking speed, 
+                  the trajectories will become denser when the person slows down. Thus, if there is no foot sliding, we should 
+                  occasionally see the change of density in pose trajectories.
+                </div>
+              </div>
+              <table width="100%">
+                <tr>
+                  <th width="33%" align="center">GT</th>
+                  <th width="33%" align="center">AvatarPoser</th>
+                  <th width="33%" align="center">AGRoL</th>
+                </tr>
+                <tr>
+                  <td align="center"><img src="static/resources/trajectory/gt01.jpg"></td>
+                  <td align="center"><img src="static/resources/trajectory/ava01.jpg"></td>
+                  <td align="center"><img src="static/resources/trajectory/agrol01.jpg"></td>
+                </tr>
+
+                <tr>
+                  <td align="center"><img src="static/resources/trajectory/gt02.jpg"></td>
+                  <td align="center"><img src="static/resources/trajectory/ava02.jpg"></td>
+                  <td align="center"><img src="static/resources/trajectory/agrol02.jpg"></td>
+                </tr>
 
               </table>
             </div>
+
           </div>
         </div>
       </div>
