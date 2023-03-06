@@ -177,7 +177,8 @@
           <h2 class="title is-3">Results</h2>
           <div class="tabs is-boxed is-centered is-medium" id="tabs">
             <ul>
-              <li data-tab="videos" class="is-active"><a>Videos</a></li>
+              <li data-tab="short-videos" class="is-active"><a>Short-Videos</a></li>
+              <li data-tab="long-videos"<a>Long-Videos</a></li>
               <li data-tab="trajectory"><a>Trajectory</a></li>
               <li data-tab="demo"><a>Demo</a></li>
             </ul>
@@ -189,10 +190,10 @@
           </div>
           <div id="tabs-content">
 
-            <div data-content="videos" class="tab-content is-active content">
+            <div data-content="short-videos" class="tab-content is-active content">
               <div class="columns is-centered has-text-left">
                 <div class="column is-two-thirds content">
-                  Visualization results.
+                  Visualization results of short videos.
                 </div>
               </div>
               <table width="100%">
@@ -222,6 +223,25 @@
                   <td align="center"><img src="static/resources/gifs/0012_gt.gif"></td>
                   <td align="center"><img src="static/resources/gifs/0012_avatarposer.gif"></td>
                   <td align="center"><img src="static/resources/gifs/0012_agrol.gif"></td>
+                </tr>
+              </table>
+            </div>
+
+            <div data-content="long-videos" class="tab-content is-active content">
+              <div class="columns is-centered has-text-left">
+                <div class="column is-two-thirds content">
+                  Visualization results of long videos.
+                </div>
+              </div>
+              <table width="100%">
+                <tr>
+                  <th width="15.6%" align="center">GT</th>
+                  <th width="15.6%" align="center">AvatarPoser</th>
+                  <th width="15.6%" align="center">AGRoL</th>
+                  <th width="4%" align="center"></th>
+                  <th width="15.6%" align="center">GT</th>
+                  <th width="15.6%" align="center">AvatarPoser</th>
+                  <th width="15.6%" align="center">AGRoL</th>
                 </tr>
                 <tr>
                   <td align="center"><img src="static/resources/gifs/0003_gt.gif"></td>
